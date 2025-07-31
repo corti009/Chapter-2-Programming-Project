@@ -1,6 +1,6 @@
 #include <iostream>
-#include <iomanip> 
-#include <cmath>  
+#include <iomanip>
+#include <cmath>   
 
 const int TOTAL_CUSTOMERS = 16500;
 const double PURCHASE_PERCENTAGE = 0.15;
