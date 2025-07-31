@@ -1,5 +1,5 @@
 #include <iostream>
-#include <iomanip> // Required for std::fixed and std::setprecision
+#include <iomanip> 
 
 const double ANNUAL_RISE_MM = 1.5;
 
