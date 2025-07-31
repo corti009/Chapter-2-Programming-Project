@@ -1,22 +1,20 @@
 #include <iostream>
-#include <iomanip> 
+#include <iomanip>
 
-const double ANNUAL_RISE_MM = 1.5;
+const double TANK_GALLONS = 20.0;
+const double MPG_TOWN = 23.5;
+const double MPG_HIGHWAY = 28.9;
 
 int main() {
-    double riseIn5Years;
-    double riseIn7Years;
-    double riseIn10Years;
+    double distanceTown;
+    double distanceHighway;
 
-    riseIn5Years = ANNUAL_RISE_MM * 5;
-    riseIn7Years = ANNUAL_RISE_MM * 7;
-    riseIn10Years = ANNUAL_RISE_MM * 10;
+    distanceTown = TANK_GALLONS * MPG_TOWN;
+    distanceHighway = TANK_GALLONS * MPG_HIGHWAY;
 
-    
-
-    std::cout << "The ocean's level will be " << riseIn5Years << " millimeters higher in 5 years." << std::endl;
-    std::cout << "The ocean's level will be " << riseIn7Years << " millimeters higher in 7 years." << std::endl;
-    std::cout << "The ocean's level will be " << riseIn10Years << " millimeters higher in 10 years." << std::endl;
+   
+    std::cout << "The car can travel " << distanceTown << " miles on one tank of gas when driven in town." << std::endl;
+    std::cout << "The car can travel " << distanceHighway << " miles on one tank of gas when driven on the highway." << std::endl;
 
     return 0;
 }
