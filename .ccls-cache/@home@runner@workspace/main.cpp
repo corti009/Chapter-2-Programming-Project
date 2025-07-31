@@ -1,3 +1,3 @@
 #include <iostream>
 
-int main() { std::cout << "Hello World!\n"; }
+const double ANNUAL_RISE_MM = 1.5;
