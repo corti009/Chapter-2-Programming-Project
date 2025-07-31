@@ -12,7 +12,9 @@ int main() {
     distanceTown = TANK_GALLONS * MPG_TOWN;
     distanceHighway = TANK_GALLONS * MPG_HIGHWAY;
 
-    
+
+    std::cout << std::fixed << std::setprecision(1);
+
     std::cout << "The car can travel " << distanceTown << " miles on one tank of gas when driven in town." << std::endl;
     std::cout << "The car can travel " << distanceHighway << " miles on one tank of gas when driven on the highway." << std::endl;
 
