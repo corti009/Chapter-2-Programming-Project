@@ -1,5 +1,5 @@
 #include <iostream>
-#include <iomanip>
+#include <iomanip> 
 
 const double ANNUAL_RISE_MM = 1.5;
 
@@ -12,8 +12,7 @@ int main() {
     riseIn7Years = ANNUAL_RISE_MM * 7;
     riseIn10Years = ANNUAL_RISE_MM * 10;
 
-    
-    std::cout << std::fixed << std::setprecision(1);
+   
 
     std::cout << "The ocean's level will be " << riseIn5Years << " millimeters higher in 5 years." << std::endl;
     std::cout << "The ocean's level will be " << riseIn7Years << " millimeters higher in 7 years." << std::endl;
