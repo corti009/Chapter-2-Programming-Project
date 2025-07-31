@@ -1,22 +1,23 @@
 #include <iostream>
-#include <iomanip>
+#include <iomanip> 
+#include <cmath>  
 
-const double TANK_GALLONS = 20.0;
-const double MPG_TOWN = 23.5;
-const double MPG_HIGHWAY = 28.9;
+const int TOTAL_CUSTOMERS = 16500;
+const double PURCHASE_PERCENTAGE = 0.15;
+const double CITRUS_PREFERENCE_PERCENTAGE = 0.58;
 
 int main() {
-    double distanceTown;
-    double distanceHighway;
+    double customersPurchasingEnergyDrinks_double;
+    double customersPreferringCitrus_double;
 
-    distanceTown = TANK_GALLONS * MPG_TOWN;
-    distanceHighway = TANK_GALLONS * MPG_HIGHWAY;
+    customersPurchasingEnergyDrinks_double = TOTAL_CUSTOMERS * PURCHASE_PERCENTAGE;
+    customersPreferringCitrus_double = customersPurchasingEnergyDrinks_double * CITRUS_PREFERENCE_PERCENTAGE;
 
     
-    std::cout << std::fixed << std::setprecision(1);
-
-    std::cout << "The car can travel " << distanceTown << " miles on one tank of gas when driven in town." << std::endl;
-    std::cout << "The car can travel " << distanceHighway << " miles on one tank of gas when driven on the highway." << std::endl;
+    std::cout << "The approximate number of customers in the survey purchasing one or more energy drinks per week: "
+              << customersPurchasingEnergyDrinks_double << std::endl;
+    std::cout << "The approximate number of customers in the survey preferring citrus-flavored energy drinks: "
+              << customersPreferringCitrus_double << std::endl;
 
     return 0;
 }
