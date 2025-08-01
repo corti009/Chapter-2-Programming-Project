@@ -1,26 +1,24 @@
 #include <iostream>
-#include <iomanip>
-#include <cmath> 
+#include <iostream>
+#include <iomanip> 
 
-const int TOTAL_CUSTOMERS = 16500;
-const double PURCHASE_PERCENTAGE = 0.15; 
-const double CITRUS_PREFERENCE_PERCENTAGE = 0.58; 
+const double ANNUAL_RISE_MM = 1.5;
 
 int main() {
-    double customersPurchasingEnergyDrinks_double;
-    double customersPreferringCitrus_double;
+    double riseIn5Years;
+    double riseIn7Years;
+    double riseIn10Years;
 
-    customersPurchasingEnergyDrinks_double = TOTAL_CUSTOMERS * PURCHASE_PERCENTAGE;
-    customersPreferringCitrus_double = customersPurchasingEnergyDrinks_double * CITRUS_PREFERENCE_PERCENTAGE;
+    riseIn5Years = ANNUAL_RISE_MM * 5;
+    riseIn7Years = ANNUAL_RISE_MM * 7;
+    riseIn10Years = ANNUAL_RISE_MM * 10;
 
     
-    int customersPurchasingEnergyDrinks = static_cast<int>(std::round(customersPurchasingEnergyDrinks_double));
-    int customersPreferringCitrus = static_cast<int>(std::round(customersPreferringCitrus_double));
+    std::cout << std::fixed << std::setprecision(1);
 
-    std::cout << "The approximate number of customers in the survey purchasing one or more energy drinks per week: "
-              << customersPurchasingEnergyDrinks << std::endl;
-    std::cout << "The approximate number of customers in the survey preferring citrus-flavored energy drinks: "
-              << customersPreferringCitrus << std::endl;
+    std::cout << "The ocean's level will be " << riseIn5Years << " millimeters higher in 5 years." << std::endl;
+    std::cout << "The ocean's level will be " << riseIn7Years << " millimeters higher in 7 years." << std::endl;
+    std::cout << "The ocean's level will be " << riseIn10Years << " millimeters higher in 10 years." << std::endl;
 
     return 0;
 }
